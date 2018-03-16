@@ -1,0 +1,12 @@
+<taglib>
+   <tlib-version>1.0</tlib-version>
+   <jsp-version>2.0</jsp-version>
+   <short-name>Copyright Tag</short-name>
+   
+   <tag>
+      <name>Copyright</name>
+      <tag-class>ua.khpi.golik.tag.CopyrightTag</tag-class>
+      <body-content>empty</body-content>
+   </tag>
+   
+</taglib>

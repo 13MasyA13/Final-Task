@@ -1,0 +1,23 @@
+#mainImage{
+	margin-left: 150px;
+}
+
+#headMenu{
+  padding-top: 70px;
+}
+
+#log_reg{
+  padding-left: 1100px;
+}
+
+#log_form{
+  border: 5px solid #000099;
+  border-radius: 25px;
+  margin-top: 45px;
+  padding-bottom: 20px;
+}
+
+#login_b{
+  padding-left: 1100px;
+  padding-top: 100px;
+}

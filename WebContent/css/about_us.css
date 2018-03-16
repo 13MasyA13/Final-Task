@@ -1,0 +1,35 @@
+#headMenu{
+  padding-top: 70px;
+  padding-left: 10px;
+}
+
+#log_reg{
+  padding-left: 1100px;
+}
+
+#login_b{
+  padding-left: 1100px;
+  padding-top: 100px;
+}
+
+#first_text{
+  padding-top: 75px;
+}
+
+#urk_ter{
+  padding-left: 300px;
+}
+
+#comp_label{
+  padding-left: 100px;
+}
+
+#comp_label_desc{
+  padding-left: 65px;
+}
+
+#list{
+  padding-left: 175px;
+  color: #000099;
+  padding-bottom: 50px;
+}

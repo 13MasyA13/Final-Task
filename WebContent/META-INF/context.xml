@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource name="jdbc/testDB" auth="Container" type="javax.sql.DataSource"
+	username="root"
+	password="max13120510"
+	driverClassName="com.mysql.jdbc.Driver"
+	url="jdbc:mysql://localhost:3306/car_rental"
+	defaultAutoCommit="false"
+	maxIdle="30" 
+	maxWait="10000"
+	maxActive="10"/>
+</Context>

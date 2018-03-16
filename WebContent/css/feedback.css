@@ -1,0 +1,47 @@
+#headMenu{
+  padding-top: 70px;
+}
+
+#message_logo{
+  width: 65px;
+  height: 65px;
+}
+
+#message_logo1{
+  width: 65px;
+  height: 65px;
+  margin-left: 120px;
+}
+
+#main_label{
+  margin-top: 50px;
+  margin-left: 25px;
+}
+
+#first_text{
+  margin-left: 100px;
+}
+
+#first_well{
+  margin-top: 75px;
+}
+
+#znak_logo{
+  width: 65px;
+  height: 65px;
+}
+
+#znak_logo1{
+  width: 65px;
+  height: 65px;
+  margin-left: 185px;
+}
+
+#opinion_text{
+  margin-left: 180px;
+}
+
+#feedback{
+  border: 5px solid black;
+  border-radius: 45px;
+}

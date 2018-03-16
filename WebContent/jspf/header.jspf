@@ -1,0 +1,49 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
+<c:set var="language" value="${not empty param.language ? param.language : not empty language ? language : pageContext.request.locale}" scope="session" />
+<fmt:setLocale value="${language}"/>
+<fmt:setBundle basename="ua.khpi.golik.i18n.resourses"/>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="${language }">
+<head>
+	<title><fmt:message key="title"></fmt:message></title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/feedback.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+		<header>
+			<c:choose>
+				<c:when test="${userType eq 'USER'}"><h4 id="log"><fmt:message key="headBar.welcome"></fmt:message> <a href="UserCabController"><c:out value="${ sessionScope.userLogin}"></c:out></a> / <a href="LogoutController">logout</a></h4></c:when>
+				<c:when test="${userType eq 'MANAGER'}"><h4 id="log"><fmt:message key="headBar.welcome"></fmt:message> <a href="ManagerCabController"><c:out value="${ sessionScope.userLogin}"></c:out></a> / <a href="LogoutController">logout</a></h4></c:when>
+				<c:when test="${userType eq 'ADMIN'}"><h4 id="log"><fmt:message key="headBar.welcome"></fmt:message> <a href="AdminOffice"><c:out value="${ sessionScope.userLogin}"></c:out></a> / <a href="LogoutController">logout</a></h4></c:when>
+				<c:otherwise><h4 id="unLog"><a href="logging.jsp" id="login_b"><fmt:message key="headBar.login"></fmt:message> </a> / <a href="registration.jsp" id="reg_b"><fmt:message key="headBar.register"></fmt:message></a></h4></c:otherwise>
+			</c:choose>
+
+			<div class="container" id="headMenu">
+			<form>
+		        <select id="language" name="language" onchange="submit()">
+		            <option value="ru" ${language == 'ru' ? 'selected' : ''}>RU</option>
+		           <option value="en" ${language == 'en' ? 'selected' : ''}>EN</option>
+		        </select>
+		    </form>
+	  			<ul class="nav nav-pills nav-justified">
+	    			<li class="active"><a href="index.jsp"><h4><fmt:message key="mainMenu.home"></fmt:message></h4></a></li>
+	    			<li><a href="AutoController"><h4><fmt:message key="mainMenu.cars"></fmt:message></h4></a></li>
+	    			<li><a href="about_us.jsp"><h4><fmt:message key="mainMenu.aboutUs"></fmt:message></h4></a></li>
+	    			<li><a href="FeedbacksController"><h4><fmt:message key="mainMenu.feedbacks"></fmt:message></h4></a></li>
+	    			<li><a href="contacts.jsp"><h4><fmt:message key="mainMenu.contacts"></fmt:message></h4></a></li>
+        		</ul>
+			</div>
+    </header>
+    

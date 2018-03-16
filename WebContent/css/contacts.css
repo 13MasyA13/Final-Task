@@ -1,0 +1,76 @@
+#headMenu{
+  padding-top: 70px;
+}
+
+#log_reg{
+  padding-left: 1100px;
+}
+
+#login_b{
+  padding-left: 1100px;
+  padding-top: 100px;
+}
+
+#our_contacts{
+  padding-left: 550px;
+  padding-top: 60px;
+}
+
+#phones_div{
+  padding-top: 30px;
+  padding-left: 100px;
+}
+
+#vodafone_logo{
+  width: 65px;
+  height: 65px;
+}
+
+#kyivstar_logo{
+  width: 65px;
+  height: 65px;
+}
+
+#lifecell_logo{
+  width: 65px;
+  height: 65px;
+}
+
+#other_div{
+  padding-top: 75px;
+  padding-left: 175px;
+}
+
+#address_logo{
+  width: 65px;
+  height: 65px;
+}
+
+#gmail_logo{
+  width: 65px;
+  height: 65px;
+}
+
+#work_time{
+  padding-top: 75px;
+  padding-left: 260px;
+}
+
+#clock_logo{
+  width: 65px;
+  height: 65px;
+}
+
+#if_que{
+  border: 3px solid black;
+  border-radius: 25px;
+  margin-top: 75px;
+}
+
+#cont_down{
+  margin-left: 45px;
+}
+
+#call_back{
+  margin-left: 275px;
+}
